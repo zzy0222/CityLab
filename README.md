@@ -32,3 +32,6 @@
 ### models
 neg.txt和pos.txt是用nlp原始的情感分析模型（用的是电商评论语料库，所以要重新train）对有用评论做的一个情感倾向的划分（只有正负）<br>
 my_sentiment.marshal.3是train后的模型，需要拷贝到snownlp下面的sentiment文件夹下，并修改__init.py__的模型加载路径<br>
+
+# Acknowledge
+最后十分感谢北京师范大学刘虓，宗一博两位同伴在建模过程中的对我的支持和帮助，这是我们共同的荣誉。
