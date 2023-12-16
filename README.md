@@ -75,7 +75,7 @@ The "_v2" csv files, which the program cannot generate, have sentiment scores co
 
 ### models
 neg.txt and pos.txt are the initial sentiment analysis models (using e-commerce review corpora, hence the need for retraining) for categorizing useful comments. (just positive and negative)<br>
-my_sentiment.marshal.3 is the trained model, which needs to be copied to the sentiment folder in snownlp and modify the model loading path in __init.py__.<br>
+my_sentiment.marshal.3 is the trained model, which needs to be copied to the sentiment folder in snownlp and modify the model loading path in "__init.py__".<br>
 
 ## Acknowledge
 Finally, I would like to express my heartfelt thanks to Liu Xiao and Zong Yibo from Beijing Normal University for their support and help during the modeling process. This is an honor we share together.
