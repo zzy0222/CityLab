@@ -35,7 +35,7 @@
 
 ### models
 neg.txt和pos.txt是用nlp原始的情感分析模型（用的是电商评论语料库，所以要重新train）对有用评论做的一个情感倾向的划分（只有正负）<br>
-my_sentiment.marshal.3是train后的模型，需要拷贝到snownlp下面的sentiment文件夹下，并修改__init.py__的模型加载路径<br>
+my_sentiment.marshal.3是train后的模型，需要拷贝到snownlp下面的sentiment文件夹下，并修改\_\_init.py\_\_的模型加载路径<br>
 
 ## 致谢
 最后十分感谢北京师范大学刘虓，宗一博两位同伴在建模过程中的对我的支持和帮助，这是我们共同的荣誉。<br><br><br>
@@ -75,7 +75,7 @@ The "_v2" csv files, which the program cannot generate, have sentiment scores co
 
 ### models
 neg.txt and pos.txt are the initial sentiment analysis models (using e-commerce review corpora, hence the need for retraining) for categorizing useful comments. (just positive and negative)<br>
-my_sentiment.marshal.3 is the trained model, which needs to be copied to the sentiment folder in snownlp and modify the model loading path in "__init.py__".<br>
+my_sentiment.marshal.3 is the trained model, which needs to be copied to the sentiment folder in snownlp and modify the model loading path in \_\_init.py\_\_.<br>
 
 ## Acknowledge
 Finally, I would like to express my heartfelt thanks to Liu Xiao and Zong Yibo from Beijing Normal University for their support and help during the modeling process. This is an honor we share together.
