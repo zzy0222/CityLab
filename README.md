@@ -43,12 +43,12 @@ my_sentiment.marshal.3是train后的模型，需要拷贝到snownlp下面的sent
 
 ## Description
 Model code for the 2019 Beijing College Mathematical Modeling Intercollegiate Competition Question B: NLP Sentiment Analysis + Improved Entropy Method + Improved Grey Relational Analysis<br>
-The original code was re-uploaded due to accidental deletion of the .git file<br>
-Since the paper hasn't been awarded yet, it won't be released for now<br>
+The original code was re-uploaded due to accidental deletion of the .git file.<br>
+Since the paper hasn't been awarded yet, it won't be released for now.<br>
 General approach:<br>
 NLP sentiment analysis to score useful comments, range [0,1]<br>
-Entropy method modeling with eight influencing factors (see keywords_classification.xlsx), each factor measured by three elements (see factor_weights method)<br>
-Grey relational analysis to identify the impact of objective indicators on subjective feelings (satisfaction and happiness index)<br>
+Entropy method modeling with eight influencing factors (see keywords_classification.xlsx), each factor measured by three elements. (see factor_weights method)<br>
+Grey relational analysis to identify the impact of objective indicators on subjective feelings. (satisfaction and happiness index)<br>
 
 ## Updates
 2019-5-14 Received first prize in the review!
@@ -57,25 +57,25 @@ Grey relational analysis to identify the impact of objective indicators on subje
 The root directory contains some raw data, but the main focus is on three folders.
 
 ### code
-The demo folder contains all the results of the code execution, which you can use for comparison and testing<br><br>
+The demo folder contains all the results of the code execution, which you can use for comparison and testing,<br><br>
 4 .py files<br><br>
-generate_csv.py: Generates all the csv files in the demo, showing that subsequent methods require the .csv files generated previously<br><br>
-train.py: Used for training the sentiment scoring model. Due to time constraints during modeling, it was only trained once. You can modify the code for more training sessions for potentially better results<br><br>
+generate_csv.py: Generates all the csv files in the demo, showing that subsequent methods require the .csv files generated previously.<br><br>
+train.py: Used for training the sentiment scoring model. Due to time constraints during modeling, it was only trained once. You can modify the code for more training sessions for potentially better results.<br><br>
 utils.py: A utility class. Implements the entropy method and grey relational analysis method, as well as functions for extracting comments. (Since my regular expressions are not strong, I welcome any experts to fork and modify)<br><br>
-main.py: Run with python main.py. It calls the process_all method. If you want to see the intermediate process, modify it according to the methods in generate_csv.py<br><br>
+main.py: Run with python main.py. It calls the process_all method. If you want to see the intermediate process, modify it according to the methods in generate_csv.py.<br><br>
 3 data tables<br><br>
-annual.csv: Excerpts from the Beijing Statistical Yearbook from 2015 - 2018<br><br>
-raw_data.csv: Original data for Question B<br><br>
-关键词分类.xlsx: Results of manual classification of the “关键词” in the original Question B data<br><br>
-中文停用词1208.txt: 1208 Chinese stop words for filtering segmented comments
+annual.csv: Excerpts from the Beijing Statistical Yearbook from 2015 - 2018.<br><br>
+raw_data.csv: Original data for Question B.<br><br>
+关键词分类.xlsx: Results of manual classification of the “关键词” in the original Question B data.<br><br>
+中文停用词1208.txt: 1208 Chinese stop words for filtering segmented comments.
 
 ### data_csv
 The five folders here represent data tables generated at different stages of the model. The csv files without "_v2" are consistent with those in the demo.<br>
-The "_v2" csv files, which the program cannot generate, have sentiment scores converted to the range [-5,5]; the original sentiment scoring range is [0,1]
+The "_v2" csv files, which the program cannot generate, have sentiment scores converted to the range [-5,5]; the original sentiment scoring range is [0,1].
 
 ### models
-neg.txt and pos.txt are the initial sentiment analysis models (using e-commerce review corpora, hence the need for retraining) for categorizing useful comments (just positive and negative)<br>
-my_sentiment.marshal.3 is the trained model, which needs to be copied to the sentiment folder in snownlp and modify the model loading path in __init.py__<br>
+neg.txt and pos.txt are the initial sentiment analysis models (using e-commerce review corpora, hence the need for retraining) for categorizing useful comments. (just positive and negative)<br>
+my_sentiment.marshal.3 is the trained model, which needs to be copied to the sentiment folder in snownlp and modify the model loading path in __init.py__.<br>
 
 ## Acknowledge
 Finally, I would like to express my heartfelt thanks to Liu Xiao and Zong Yibo from Beijing Normal University for their support and help during the modeling process. This is an honor we share together.
